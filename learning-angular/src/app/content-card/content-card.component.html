@@ -1,0 +1,10 @@
+<div style="text-align:center">
+    <h1>
+        Welcome to <span [innerHtml]="title | safe"></span>!
+    </h1>
+<h2><strong>Rankings</strong></h2>
+<span [innerHTML]="contentList.getItemIndex(0) | safe"></span>
+<span [innerHTML]="contentList.getItemIndex(1) | safe"></span>
+<span [innerHTML]="contentList.getItemIndex(2) | safe"></span>
+</div>
+
