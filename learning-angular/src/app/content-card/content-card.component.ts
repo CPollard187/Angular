@@ -67,11 +67,11 @@ export class ContentList {
 
     //Get the item from a certain index location
     getItemIndex(index:number) {
-        return "<h2>ID:</h2> " + this._item[index].contentId +
-            "<br/> <h2>Author:</h2> " + this._item[index].author +
-            "<br/> <h2>Type</h2> " + this._item[index].type +
-            "<br/> <h2>Body:</h2> " + this._item[index].body +
-            "<br/> " + this._item[index].imageUrl + "<br/> <br/> ";
+        return "<h3>ID:</h3> " + this._item[index].contentId +
+            "<br/> <h3>Author:</h3> " + this._item[index].author +
+            "<br/> <h3>Type</h3> " + this._item[index].type +
+            "<br/> <h3>Body:</h3> " + this._item[index].body +
+            "<br/> <img src=" + this._item[index].imageUrl + "><br>";
     }
 }
 
