@@ -36,50 +36,50 @@ export class ContentCardComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.contentList = new ContentList();
-        this.contentList.addItems(this.content1);
-        this.contentList.addItems(this.content2);
-        this.contentList.addItems(this.content3);
+        // this.contentList = new ContentList();
+        // this.contentList.addItems(this.content1);
+        // this.contentList.addItems(this.content2);
+        // this.contentList.addItems(this.content3);
     }
 }
 
-export class ContentList {
-    _item: Content[];
-    constructor() {
-        this._item = [];
-    }
+// export class ContentList {
+//     _item: Content[];
+//     constructor() {
+//         this._item = [];
+//     }
+//
+//     //Gets the content from the array
+//     get items(): Content[] {
+//         return this._item;
+//     }
+//
+//     //add 1 to the array
+//     addItems(item) {
+//         this._item.push(item)
+//         //return ++ContentList.contentAmount;
+//     }
+//
+//     //Return the number of items in the items array
+//     numOfItems(){
+//         return this._item.length;
+//     }
+//
+//     //Get the item from a certain index location
+//     getItemIndex(index:number) {
+//         return "<h3>ID:</h3> " + this._item[index].contentId +
+//             "<br/> <h3>Author:</h3> " + this._item[index].author +
+//             "<br/> <h3>Type</h3> " + this._item[index].type +
+//             "<br/> <h3>Body:</h3> " + this._item[index].body +
+//             "<br/> <img src=" + this._item[index].imageUrl + "><br>";
+//     }
+// }
 
-    //Gets the content from the array
-    get items(): Content[] {
-        return this._item;
-    }
-
-    //add 1 to the array
-    addItems(item) {
-        this._item.push(item)
-        //return ++ContentList.contentAmount;
-    }
-
-    //Return the number of items in the items array
-    numOfItems(){
-        return this._item.length;
-    }
-
-    //Get the item from a certain index location
-    getItemIndex(index:number) {
-        return "<h3>ID:</h3> " + this._item[index].contentId +
-            "<br/> <h3>Author:</h3> " + this._item[index].author +
-            "<br/> <h3>Type</h3> " + this._item[index].type +
-            "<br/> <h3>Body:</h3> " + this._item[index].body +
-            "<br/> <img src=" + this._item[index].imageUrl + "><br>";
-    }
-}
-
-    export interface Content {
-    contentId: number;
-    author: string;
-    type?: string;
-    imageUrl?: string;
-    body: string;
-    tags?: string[];
-}
+//     export interface Content {
+//     contentId: number;
+//     author: string;
+//     type?: string;
+//     imageUrl?: string;
+//     body: string;
+//     tags?: string[];
+// }
