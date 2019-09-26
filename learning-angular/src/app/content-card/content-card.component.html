@@ -3,8 +3,13 @@
         Welcome to <span [innerHtml]="title | safe"></span>!
     </h1>
 <h2><strong>Rankings</strong></h2>
-<span [innerHTML]="contentList.getItemIndex(0) | safe"></span>
-<span [innerHTML]="contentList.getItemIndex(1) | safe"></span>
-<span [innerHTML]="contentList.getItemIndex(2) | safe"></span>
+
+    <!--Displays each content to the screen-->
+<span [innerHTML]="content.getItemIndex(0) | safe"></span>
+<span [innerHTML]="content.getItemIndex(1) | safe"></span>
+<span [innerHTML]="content.getItemIndex(2) | safe"></span>
+<span [innerHTML]="content.getItemIndex(3) | safe"></span>
+<span [innerHTML]="content.getItemIndex(4) | safe"></span>
+
 </div>
 

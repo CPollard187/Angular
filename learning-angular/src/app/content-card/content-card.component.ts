@@ -1,38 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 //import {Content} from "@angular/compiler/src/render3/r3_ast";
-//import {Content} from "./content-card.component.spec";
+import {Content} from "./content-card-helper";
 
 @Component({
   selector: 'app-content-card',
   templateUrl: './content-card.component.html',
-  styleUrls: ['./content-card.component.css']
+  styleUrls: ['./content-card.component.scss']
 })
 export class ContentCardComponent implements OnInit {
 
     title = "Cody's Favourite Games";
+    @Input() content: Content;
 
-    contentList:ContentList;
+    constructor(){
 
-    content1:Content = {
-        contentId: 1,
-        author: "Cody Pollard",
-        type: "Games",
-        body: "Minecraft. The greatest game ever made.",
-        imageUrl: "https://pixabay.com/illustrations/minecraft-wallpaper-background-2053882/"
-    }
-    content2:Content = {
-        contentId: 2,
-        author: "Cody Pollard",
-        type: "Games",
-        body: "Call of Duty. 2nd greatest game ever made.",
-        imageUrl: "https://www.flickr.com/photos/65092514@N08/19785006552"
-    }
-    content3:Content = {
-        contentId: 3,
-        author: "Cody Pollard",
-        type: "Games",
-        body: "Mario Kart. The 3rd greatest game ever made.",
-        imageUrl: "https://www.flickr.com/photos/antdude3001/14159923329"
     }
 
     ngOnInit() {
@@ -41,6 +22,13 @@ export class ContentCardComponent implements OnInit {
         // this.contentList.addItems(this.content2);
         // this.contentList.addItems(this.content3);
     }
+
+    clickEvent(){
+
+    }
+    public onClick(content: Content) {
+            console.log("contentId = " + content.contentId);
+        }
 }
 
 // export class ContentList {
@@ -82,4 +70,27 @@ export class ContentCardComponent implements OnInit {
 //     imageUrl?: string;
 //     body: string;
 //     tags?: string[];
+// }
+// contentList:ContentList;
+//
+// content1:Content = {
+//     contentId: 1,
+//     author: "Cody Pollard",
+//     type: "Games",
+//     body: "Minecraft. The greatest game ever made.",
+//     imageUrl: "https://pixabay.com/illustrations/minecraft-wallpaper-background-2053882/"
+// }
+// content2:Content = {
+//     contentId: 2,
+//     author: "Cody Pollard",
+//     type: "Games",
+//     body: "Call of Duty. 2nd greatest game ever made.",
+//     imageUrl: "https://www.flickr.com/photos/65092514@N08/19785006552"
+// }
+// content3:Content = {
+//     contentId: 3,
+//     author: "Cody Pollard",
+//     type: "Games",
+//     body: "Mario Kart. The 3rd greatest game ever made.",
+//     imageUrl: "https://www.flickr.com/photos/antdude3001/14159923329"
 // }
