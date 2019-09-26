@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SafePipe } from './safe.pipe';
 import { ContentCardComponent } from './content-card/content-card.component';
+import { ContentListComponent } from './content-list/content-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SafePipe,
-    ContentCardComponent
+    ContentCardComponent,
+    ContentListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,26 @@
+//Last element has a different border
+.is-last{
+  border-style: solid;
+  border-width: 2px;
+  border-color:#000000;
+}
+//Border around each Card
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-color:#000000;
+  padding: 5px;
+}
+//Image Up in the top right
+.imageUrl{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+//Body under the image
+.content.body{
+  position: absolute;
+  top: 60px;
+  right: 10px;
+}
+
