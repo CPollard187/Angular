@@ -4,12 +4,24 @@
     </h1>
 <h2><strong>Rankings</strong></h2>
 
+    <input #searchInput>: "searchInput" </input>
+    <!--When they click the button it will say if the item exists or not-->
+    <button (click)="clickEvent(searchInput)">Search</button>
+
     <!--Displays each content to the screen-->
-<span [innerHTML]="content.getItemIndex(0) | safe"></span>
-<span [innerHTML]="content.getItemIndex(1) | safe"></span>
-<span [innerHTML]="content.getItemIndex(2) | safe"></span>
-<span [innerHTML]="content.getItemIndex(3) | safe"></span>
-<span [innerHTML]="content.getItemIndex(4) | safe"></span>
+    <span> {{ content.contentId }}</span>
+    <span> {{ content.author }}</span>
+    <span> {{ content.type }}</span>
+    <span> {{ content.imageUrl }}</span>
+    <span> {{ content.body }}</span>
+    <span> {{ content.tags }}</span>
+
+    <!--Displays each content to the screen-->
+<!--<span [innerHTML]="content.getItemIndex(0) | safe"></span>-->
+<!--<span [innerHTML]="content.getItemIndex(1) | safe"></span>-->
+<!--<span [innerHTML]="content.getItemIndex(2) | safe"></span>-->
+<!--<span [innerHTML]="content.getItemIndex(3) | safe"></span>-->
+<!--<span [innerHTML]="content.getItemIndex(4) | safe"></span>-->
 
 </div>
 
