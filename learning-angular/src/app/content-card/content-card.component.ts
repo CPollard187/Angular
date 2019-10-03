@@ -9,6 +9,8 @@ import {Content} from "./content-card-helper";
 })
 export class ContentCardComponent implements OnInit {
 
+    yes = "Yes";
+    no = "No";
     title = "Cody's Favourite Games";
     @Input() content: Content;
 
@@ -23,12 +25,15 @@ export class ContentCardComponent implements OnInit {
         // this.contentList.addItems(this.content3);
     }
 
-    clickEvent(){
-
-    }
-    public onClick(content: Content) {
-            console.log("contentId = " + content.contentId);
+    clickEvent(searchInput: string){
+        if (searchInput == this.content.body){
+            this.yes;
         }
+        this.no;
+    }
+    // public onClick(content: Content) {
+    //         console.log("contentId = " + content.contentId);
+    //     }
 }
 
 // export class ContentList {

@@ -23,4 +23,12 @@
   top: 60px;
   right: 10px;
 }
+//If tag is equal to News show green border
+.tag == "News"{
+  border-color: darkgreen;
+}
+//If tag is equal to blue show blue border
+.tag == "Story"{
+  border-color: blue;
+}
 
