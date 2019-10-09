@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { SafePipe } from './safe.pipe';
 import { ContentCardComponent } from './content-card/content-card.component';
 import { ContentListComponent } from './content-list/content-list.component';
+import { TextDecorationDirective } from './text-decoration.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SafePipe,
     ContentCardComponent,
-    ContentListComponent
+    ContentListComponent,
+    TextDecorationDirective
   ],
   imports: [
     BrowserModule,
