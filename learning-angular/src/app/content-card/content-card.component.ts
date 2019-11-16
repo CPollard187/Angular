@@ -1,6 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 //import {Content} from "@angular/compiler/src/render3/r3_ast";
 import {Content} from "./content-card-helper";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-content-card',
@@ -14,9 +16,27 @@ export class ContentCardComponent implements OnInit {
     title = "Cody's Favourite Games";
     @Input() content: Content;
 
-    constructor(){
-
+    getContent() : Observable<Content[]>{
+        return this.http.get<Content[]>("api/content");
     }
+
+    private httpOptions = {
+        headers: new HttpHeaders({ 'Content-type':
+                'application/json' })
+    };
+
+
+    addContent(content: Content): Observable<Content>{
+        return this.http.post<Content>("api/content", content,
+            this.httpOptions);
+    }
+
+    constructor(private http: HttpClient){
+        this.getContent();
+        this.addContent(this.content);
+    }
+
+
 
     ngOnInit() {
         // this.contentList = new ContentList();

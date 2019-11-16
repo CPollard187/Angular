@@ -7,6 +7,9 @@ import { SafePipe } from './safe.pipe';
 import { ContentCardComponent } from './content-card/content-card.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { TextDecorationDirective } from './text-decoration.directive';
+import { HttpClientModule} from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule} from 'angular-inmemory-web-api';
+import { InMemoryDataService} from './in-memory-data.service';
 
 @NgModule({
   declarations: [
