@@ -29,28 +29,28 @@ export class ContentListComponent implements OnInit {
           type: "Story",
           body: "Call of Duty. The 2nd greatest game ever made.",
           title: "Gaming is da best",
-          imageUrl: "https://pixabay.com/illustrations/minecraft-wallpaper-background-2053882/"
+          imageUrl: "https://pixabay.com/illustrations/minecraft-wallpaper-background-2053882/",
+          tag: "Activision"
       }
       this.content[2] = {
           contentId: 3,
           author: "Cody Pollard",
           body: "Mario Kart. The 3rd greatest game ever made.",
           title: "Gaming For Kids",
-          imageUrl: "https://pixabay.com/illustrations/minecraft-wallpaper-background-2053882/"
+          imageUrl: "https://pixabay.com/illustrations/minecraft-wallpaper-background-2053882/",
+          tag: "Nintendo"
       }
       this.content[3] = {
           contentId: 4,
           author: "Cody Pollard",
           body: "Portal. The 4th greatest game ever made.",
           title: "Gaming For the Wise",
-          imageUrl: "https://pixabay.com/illustrations/minecraft-wallpaper-background-2053882/"
       }
       this.content[4] = {
           contentId: 5,
           author: "Cody Pollard",
           body: "Rocket League. The 5th greatest game ever made.",
-          title: "This game is amaaaaaaaaazing",
-          imageUrl: "https://pixabay.com/illustrations/minecraft-wallpaper-background-2053882/"
+          title: "This game is amazing",
       }
   }
 

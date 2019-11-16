@@ -12,9 +12,14 @@
     <span> {{ content.contentId }}</span>
     <span> {{ content.author }}</span>
     <span> {{ content.type }}</span>
+    <span appTextDecoration="underline"> {{ content.title }}</span>
+    <div [ngSwitch]='image'>
+        <span *ngSwitchCase='"imageIsThere"'>{{ content.imageUrl }}</span>
+        <span *ngSwitchDefault>"https://en.wikipedia.org/wiki/File:Smiley_Face.JPG"</span>
+    </div>
     <span> {{ content.imageUrl }}</span>
     <span> {{ content.body }}</span>
-    <span> {{ content.tags }}</span>
+    <span appTextDecoration="bold"> {{ content.tags }}</span>
 
     <!--Displays each content to the screen-->
 <!--<span [innerHTML]="content.getItemIndex(0) | safe"></span>-->
