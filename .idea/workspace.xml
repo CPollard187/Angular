@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="769c414b-aa15-468a-9525-aa52508acc75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/learning-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/learning-angular/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning-angular/src/app/content-card/content-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/learning-angular/src/app/content-card/content-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning-angular/src/app/in-memory-data.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/learning-angular/src/app/in-memory-data.service.spec.ts" afterDir="false" />
-    </list>
+    <list default="true" id="769c414b-aa15-468a-9525-aa52508acc75" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learning-angular/src/app/content-card/content-card.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state relative-caret-position="272">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="e#120#166#0" expanded="true" />
               </folding>
@@ -223,12 +219,12 @@
       <option name="presentableId" value="Default" />
       <updated>1573513751479</updated>
       <workItem from="1573513756673" duration="805000" />
-      <workItem from="1573863367329" duration="2950000" />
+      <workItem from="1573863367329" duration="3558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3755000" />
+    <option name="totallyTimeSpent" value="4363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="9" width="1936" height="1056" extended-state="0" />
@@ -307,8 +303,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learning-angular/src/app/content-card/content-card.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        <state relative-caret-position="272">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="e#120#166#0" expanded="true" />
           </folding>
