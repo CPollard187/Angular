@@ -10,6 +10,10 @@ import { TextDecorationDirective } from './text-decoration.directive';
 import { HttpClientModule} from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule} from 'angular-inmemory-web-api';
 import { InMemoryDataService} from './in-memory-data.service';
+import "hammerjs";
+import {MatButtonModule} from '@angular/material';
+import {MatInputModule} from '@angular/material/input';
+import { CreateContentComponentComponent } from './create-content-component/create-content-component.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +21,14 @@ import { InMemoryDataService} from './in-memory-data.service';
     SafePipe,
     ContentCardComponent,
     ContentListComponent,
-    TextDecorationDirective
+    TextDecorationDirective,
+    CreateContentComponentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+      MatButtonModule,
+      MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent, ContentCardComponent]

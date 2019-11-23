@@ -3,6 +3,8 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Content} from "./content-card-helper";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
+import 'hammerjs';
+
 
 @Component({
   selector: 'app-content-card',
@@ -15,6 +17,7 @@ export class ContentCardComponent implements OnInit {
     no = "No";
     title = "Cody's Favourite Games";
     @Input() content: Content;
+
 
     getContent() : Observable<Content[]>{
         return this.http.get<Content[]>("api/content");

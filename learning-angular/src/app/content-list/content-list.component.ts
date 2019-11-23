@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Content} from './content-card-helper';
+import 'hammerjs';
+
 
 @Component({
   selector: 'app-content-list',
