@@ -1,3 +1,6 @@
+import 'hammerjs';
+@import '~@angular/material/prebuilt-themes/deeppurpleamber.css';
+
 //Last element has a different border
 .is-last{
   border-style: solid;
