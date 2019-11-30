@@ -22,6 +22,10 @@ export class ContentCardComponent implements OnInit {
     getContent() : Observable<Content[]>{
         return this.http.get<Content[]>("api/content");
     }
+    getContentItem(id): Observable<Content>{
+        console.log("Getting observable content item");
+        return this.http.get<Content>("api/content/" + id);
+    }
 
     private httpOptions = {
         headers: new HttpHeaders({ 'Content-type':
