@@ -14,6 +14,8 @@ import "hammerjs";
 import {MatButtonModule} from '@angular/material';
 import {MatInputModule} from '@angular/material/input';
 import { CreateContentComponentComponent } from './create-content-component/create-content-component.component';
+import { ContentDetailComponent } from './content-detail/content-detail.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,19 @@ import { CreateContentComponentComponent } from './create-content-component/crea
     ContentCardComponent,
     ContentListComponent,
     TextDecorationDirective,
-    CreateContentComponentComponent
+    CreateContentComponentComponent,
+    ContentDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
       MatButtonModule,
-      MatInputModule
+      MatInputModule,
+      RouterModule.forRoot([
+          { path: 'content/:id', component: ContentDetailComponent },
+          { path: 'content', component: ContentListComponent }
+      ])
+
   ],
   providers: [],
   bootstrap: [AppComponent, ContentCardComponent]
