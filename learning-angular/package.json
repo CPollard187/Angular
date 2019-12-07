@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "http-server -p 8080 -c-1 dist/learning-angular",
     "generate": "ng generate",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -21,8 +21,11 @@
     "@angular/material": "^8.2.3",
     "@angular/platform-browser": "~8.2.5",
     "@angular/platform-browser-dynamic": "~8.2.5",
+    "@angular/pwa": "^0.803.20",
     "@angular/router": "~8.2.5",
+    "@angular/service-worker": "~8.2.5",
     "angular-in-memory-web-api": "^0.8.0",
+    "http-server": "^0.12.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
