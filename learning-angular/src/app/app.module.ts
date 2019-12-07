@@ -16,6 +16,8 @@ import {MatInputModule} from '@angular/material/input';
 import { CreateContentComponentComponent } from './create-content-component/create-content-component.component';
 import { ContentDetailComponent } from './content-detail/content-detail.component';
 import { RouterModule } from '@angular/router';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { RouterModule } from '@angular/router';
       RouterModule.forRoot([
           { path: 'content/:id', component: ContentDetailComponent },
           { path: 'content', component: ContentListComponent }
-      ])
+      ]),
+      ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
 
   ],
   providers: [],
